@@ -1,0 +1,14 @@
+{
+  "name": "NexusAI",
+  "short_name": "NexusAI",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#101311",
+  "background_color": "#F6F7F4",
+  "display": "standalone"
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" fill="none">
+  <rect width="1200" height="760" rx="28" fill="#F0F3EF"/>
+  <rect x="28" y="28" width="1144" height="704" rx="20" fill="#fff" stroke="#DFE4DE" stroke-width="2"/>
+  <rect x="28" y="28" width="220" height="704" rx="20" fill="#171C19"/>
+  <path d="M228 28h20v704h-20z" fill="#171C19"/>
+  <circle cx="67" cy="69" r="17" fill="#B8F36B"/><path d="M60 69h14m-7-7v14" stroke="#18210F" stroke-width="3" stroke-linecap="round"/>
+  <text x="96" y="76" fill="#F6F7F4" font-family="Arial,sans-serif" font-size="20" font-weight="700">NexusAI</text>
+  <rect x="48" y="117" width="180" height="42" rx="9" fill="#29302B"/><circle cx="68" cy="138" r="5" fill="#B8F36B"/><text x="84" y="143" fill="#F6F7F4" font-family="Arial,sans-serif" font-size="14">Overview</text>
+  <text x="61" y="198" fill="#A2ABA5" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">WORKSPACE</text>
+  <g fill="#C9D0CA" font-family="Arial,sans-serif" font-size="14"><text x="84" y="237">Workflows</text><text x="84" y="282">Connections</text><text x="84" y="327">Activity</text><text x="84" y="372">Analytics</text></g>
+  <g stroke="#87918A" stroke-width="2"><path d="M61 226h13v13H61zM61 271h13v13H61zM61 316h13v13H61zM61 361h13v13H61z"/></g>
+  <circle cx="68" cy="674" r="18" fill="#52685B"/><text x="61" y="679" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="700">AM</text><text x="96" y="671" fill="#F6F7F4" font-family="Arial,sans-serif" font-size="13" font-weight="700">Alex Morgan</text><text x="96" y="690" fill="#A2ABA5" font-family="Arial,sans-serif" font-size="11">Workspace admin</text>
+  <text x="286" y="81" fill="#101311" font-family="Arial,sans-serif" font-size="26" font-weight="700">Good morning, Alex</text><text x="286" y="110" fill="#59615C" font-family="Arial,sans-serif" font-size="14">Here's what's moving across your customer workflows.</text>
+  <rect x="983" y="55" width="154" height="42" rx="9" fill="#101311"/><text x="1008" y="81" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">+ New workflow</text>
+  <g><rect x="286" y="142" width="260" height="116" rx="12" fill="#F8F9F7" stroke="#DFE4DE"/><rect x="563" y="142" width="260" height="116" rx="12" fill="#F8F9F7" stroke="#DFE4DE"/><rect x="840" y="142" width="297" height="116" rx="12" fill="#F8F9F7" stroke="#DFE4DE"/></g>
+  <g font-family="Arial,sans-serif"><text x="308" y="176" fill="#59615C" font-size="13">Tasks completed</text><text x="308" y="222" fill="#101311" font-size="32" font-weight="700">2,408</text><text x="385" y="221" fill="#2D8A58" font-size="12" font-weight="700">+18.6%</text><text x="585" y="176" fill="#59615C" font-size="13">Time saved</text><text x="585" y="222" fill="#101311" font-size="32" font-weight="700">126 hrs</text><text x="862" y="176" fill="#59615C" font-size="13">Workflows active</text><text x="862" y="222" fill="#101311" font-size="32" font-weight="700">18</text></g>
+  <rect x="286" y="282" width="851" height="250" rx="12" fill="#fff" stroke="#DFE4DE"/><text x="310" y="318" fill="#101311" font-family="Arial,sans-serif" font-size="16" font-weight="700">Workflow activity</text><text x="310" y="341" fill="#59615C" font-family="Arial,sans-serif" font-size="12">Tasks completed this week</text>
+  <g stroke="#E8ECE7"><path d="M330 380h780M330 422h780M330 464h780M330 506h780"/></g>
+  <path d="M340 483C400 456 423 470 469 433s75 19 117-10 63-28 107-6 73-55 116-36 68-35 113-28 63-39 100-51" stroke="#528B5F" stroke-width="4" stroke-linecap="round"/><path d="M340 483C400 456 423 470 469 433s75 19 117-10 63-28 107-6 73-55 116-36 68-35 113-28 63-39 100-51v134H340z" fill="#B8F36B" fill-opacity=".18"/>
+  <rect x="286" y="555" width="851" height="145" rx="12" fill="#fff" stroke="#DFE4DE"/><text x="310" y="589" fill="#101311" font-family="Arial,sans-serif" font-size="16" font-weight="700">Recent workflow runs</text>
+  <g font-family="Arial,sans-serif" font-size="12"><text x="310" y="625" fill="#101311">New customer handoff</text><text x="310" y="666" fill="#101311">Support ticket triage</text><text x="716" y="625" fill="#59615C">HubSpot to Slack</text><text x="716" y="666" fill="#59615C">AI summary review</text><text x="1040" y="625" fill="#2D8A58" font-weight="700">Completed</text><text x="1040" y="666" fill="#2D8A58" font-weight="700">Completed</text></g>
+  <circle cx="110" cy="246" r="4" fill="#A2ABA5"/><circle cx="110" cy="291" r="4" fill="#A2ABA5"/><circle cx="110" cy="336" r="4" fill="#A2ABA5"/><circle cx="110" cy="381" r="4" fill="#A2ABA5"/>
+</svg>

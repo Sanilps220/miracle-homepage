@@ -1,0 +1,678 @@
+{
+  "schema_version": "1.0.0",
+  "content_status": {
+    "mode": "example_content",
+    "note": "Replace sample customer names, logos, testimonials, metrics, URLs, and product claims with approved, verified business information before publishing."
+  },
+  "site": {
+    "name": "NexusAI",
+    "base_url": "https://nexusai.com",
+    "default_locale": "en-US",
+    "page_path": "/",
+    "route_name": "home"
+  },
+  "head_metadata": {
+    "title": "NexusAI | Automate Customer Operations Without Code",
+    "title_template": "%s | NexusAI",
+    "description": "Connect your tools and automate customer operations without code. Build reliable workflows, reduce manual work, and give your team more time for high-impact work.",
+    "keywords": [
+      "AI workflow automation",
+      "customer operations",
+      "no-code automation",
+      "business workflow platform"
+    ],
+    "canonical_url": "https://nexusai.com/",
+    "robots": "index,follow",
+    "charset": "UTF-8",
+    "viewport": "width=device-width, initial-scale=1",
+    "theme_color": "#101311",
+    "open_graph": {
+      "type": "website",
+      "locale": "en_US",
+      "site_name": "NexusAI",
+      "title": "NexusAI | Customer operations, on autopilot",
+      "description": "Connect your tools, automate repetitive work, and keep every customer workflow moving.",
+      "url": "https://nexusai.com/",
+      "image": "https://nexusai.com/assets/social/nexusai-og.svg",
+      "image_alt": "NexusAI workflow automation dashboard preview",
+      "image_width": 1200,
+      "image_height": 630
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "site": "@nexusai",
+      "creator": "@nexusai",
+      "title": "NexusAI | Customer operations, on autopilot",
+      "description": "Connect your tools, automate repetitive work, and keep every customer workflow moving.",
+      "image": "https://nexusai.com/assets/social/nexusai-twitter.svg",
+      "image_alt": "NexusAI workflow automation dashboard preview"
+    },
+    "favicons": [
+      {
+        "rel": "icon",
+        "type": "image/svg+xml",
+        "sizes": "any",
+        "href": "/favicon.svg"
+      },
+      {
+        "rel": "apple-touch-icon",
+        "href": "/assets/branding/nexusai-mark.svg"
+      },
+      {
+        "rel": "manifest",
+        "href": "/site.webmanifest"
+      }
+    ],
+    "font_preloads": [
+      {
+        "rel": "preconnect",
+        "href": "https://fonts.googleapis.com"
+      },
+      {
+        "rel": "preconnect",
+        "href": "https://fonts.gstatic.com",
+        "crossorigin": "anonymous"
+      },
+      {
+        "rel": "preload",
+        "as": "style",
+        "href": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap"
+      }
+    ],
+    "structured_data": {
+      "organization_name": "NexusAI",
+      "organization_url": "https://nexusai.com",
+      "logo_url": "https://nexusai.com/assets/branding/nexusai-mark.svg"
+    }
+  },
+  "branding": {
+    "site_name": "NexusAI",
+    "tagline": "Customer operations, on autopilot.",
+    "logos": {
+      "light_mode": {
+        "src": "/assets/branding/nexusai-logo-dark.svg",
+        "alt": "NexusAI",
+        "width": 148,
+        "height": 34
+      },
+      "dark_mode": {
+        "src": "/assets/branding/nexusai-logo-light.svg",
+        "alt": "NexusAI",
+        "width": 148,
+        "height": 34
+      },
+      "emblem": {
+        "src": "/assets/branding/nexusai-mark.svg",
+        "alt": "NexusAI mark",
+        "width": 36,
+        "height": 36
+      }
+    },
+    "asset_guidance": "Use the dark wordmark on light surfaces and the light wordmark on dark surfaces. Preserve intrinsic aspect ratio; never recolor the supplied logo files."
+  },
+  "section_order": [
+    "announcement_bar",
+    "navigation",
+    "hero",
+    "social_proof",
+    "transformation",
+    "features",
+    "testimonials",
+    "faq",
+    "final_cta",
+    "footer"
+  ],
+  "design_system": {
+    "style_keywords": [
+      "premium SaaS",
+      "high contrast",
+      "editorial clarity",
+      "quiet confidence"
+    ],
+    "color_tokens": {
+      "ink": "#101311",
+      "ink_muted": "#59615C",
+      "paper": "#F6F7F4",
+      "surface": "#FFFFFF",
+      "surface_dark": "#171C19",
+      "line": "#DFE4DE",
+      "accent": "#B8F36B",
+      "accent_ink": "#18210F",
+      "success": "#2D8A58",
+      "focus": "#3877E8"
+    },
+    "typography": {
+      "font_family": "Geist, sans-serif",
+      "heading_weight": 600,
+      "body_weight": 400,
+      "body_line_height": 1.6,
+      "heading_line_height": 1.05,
+      "letter_spacing": 0,
+      "scale": {
+        "display": "clamp(3rem, 6vw, 5.5rem)",
+        "h1": "clamp(2.75rem, 5vw, 4.75rem)",
+        "h2": "clamp(2rem, 3.5vw, 3.5rem)",
+        "h3": "1.25rem",
+        "body": "1rem",
+        "small": "0.875rem"
+      }
+    },
+    "layout": {
+      "content_max_width": "1200px",
+      "reading_max_width": "680px",
+      "section_spacing_desktop": "120px",
+      "section_spacing_mobile": "72px",
+      "grid_gutter": "24px",
+      "page_gutter_desktop": "48px",
+      "page_gutter_mobile": "20px",
+      "corner_radius": "8px"
+    },
+    "surface_and_motion": {
+      "background_treatment": "Alternate clean paper and ink-dark full-width bands. Use a faint technical grid texture in the hero background only; keep content unframed.",
+      "glass_effect": "Apply a restrained translucent blur to the floating hero dashboard panels and sticky navigation only; maintain readable contrast.",
+      "shadows": "Use soft, low-spread shadows only to lift dashboard layers from the canvas.",
+      "micro_interactions": "Use short 150-220ms transitions for button, link, accordion, and dashboard hover states. Animate transform and opacity, not layout dimensions.",
+      "reduced_motion": "Respect prefers-reduced-motion and remove nonessential movement."
+    },
+    "responsive_behavior": {
+      "desktop": "Use a centered max-width content frame, wide whitespace, two-column hero, and three-column feature grid.",
+      "tablet": "Reduce section gutters and dashboard detail; keep the hero copy before its visual.",
+      "mobile": "Stack all columns, use a menu toggle, keep CTAs full-width when needed, and prevent horizontal overflow.",
+      "breakpoints": {
+        "mobile_max": 640,
+        "tablet_max": 960
+      }
+    },
+    "accessibility": {
+      "minimum_contrast": "WCAG AA",
+      "keyboard_support": true,
+      "visible_focus": true,
+      "image_alt_text_required": true,
+      "decorative_images_alt": ""
+    }
+  },
+  "announcement_bar": {
+    "enabled": true,
+    "tone": "launch_update",
+    "badge": "JUST LAUNCHED",
+    "text": "Meet the faster way to keep customer operations moving.",
+    "link": {
+      "label": "Explore NexusAI 2.0",
+      "url": "/product/updates"
+    },
+    "dismissible": true,
+    "visual_directive": "Compact, high-contrast full-width strip above the header. Keep the announcement link obvious and the dismiss control keyboard accessible."
+  },
+  "navigation": {
+    "logo": {
+      "light_mode": "/assets/branding/nexusai-logo-dark.svg",
+      "dark_mode": "/assets/branding/nexusai-logo-light.svg",
+      "alt": "NexusAI",
+      "width": 148,
+      "height": 34
+    },
+    "sticky_logo": {
+      "light_mode": "/assets/branding/nexusai-logo-dark.svg",
+      "dark_mode": "/assets/branding/nexusai-logo-light.svg",
+      "alt": "NexusAI",
+      "width": 132,
+      "height": 30
+    },
+    "mobile_logo": {
+      "light_mode": "/assets/branding/nexusai-mark.svg",
+      "dark_mode": "/assets/branding/nexusai-mark.svg",
+      "alt": "NexusAI",
+      "width": 36,
+      "height": 36
+    },
+    "links": [
+      {
+        "label": "Platform",
+        "url": "#features"
+      },
+      {
+        "label": "How it works",
+        "url": "#transformation"
+      },
+      {
+        "label": "Customers",
+        "url": "#testimonials"
+      },
+      {
+        "label": "FAQ",
+        "url": "#faq"
+      }
+    ],
+    "primary_cta": {
+      "label": "Start free",
+      "url": "/signup",
+      "aria_label": "Start a free NexusAI trial"
+    },
+    "mobile_menu": {
+      "open_label": "Open navigation menu",
+      "close_label": "Close navigation menu",
+      "show_primary_cta": true
+    },
+    "visual_directive": "Use a slim, sticky header with a subtle backdrop blur after scroll. Keep navigation unboxed, align links and CTA on one baseline, and use the emblem in the compact mobile header."
+  },
+  "hero": {
+    "id": "hero",
+    "category_badge": "WORKFLOW AUTOMATION FOR CUSTOMER TEAMS",
+    "headline": "Customer operations,\non autopilot.",
+    "subheadline": "Connect the tools you already use. NexusAI takes repetitive work off your team's plate, so every customer gets a faster, more consistent experience.",
+    "primary_cta": {
+      "label": "Start your free trial",
+      "url": "/signup",
+      "style": "high_contrast"
+    },
+    "secondary_cta": {
+      "label": "See how it works",
+      "url": "#features",
+      "style": "text_with_arrow"
+    },
+    "friction_reducers": [
+      "No credit card required",
+      "Connect your first tools in minutes",
+      "Cancel any time"
+    ],
+    "visual": {
+      "type": "layered_product_dashboard_mockup",
+      "asset": "/assets/product/hero-workflow-dashboard.svg",
+      "alt": "NexusAI workflow dashboard showing connected apps, an active automation, and recent task results",
+      "fallback_asset": "/assets/product/hero-workflow-dashboard.svg",
+      "composition": "Place a large, crisp dashboard preview to the right of the headline on desktop and below copy on mobile. Add two restrained floating panels: a completed workflow event and a small time-saved chart. Keep the actual product interface legible and avoid decorative gradients over the screenshot.",
+      "layers": [
+        {
+          "type": "workflow_status",
+          "title": "New customer handoff",
+          "status": "Completed",
+          "detail": "CRM updated · Team notified"
+        },
+        {
+          "type": "activity_chart",
+          "title": "Work handled automatically",
+          "period": "This week",
+          "value": "2,408"
+        }
+      ],
+      "interaction": "Subtle pointer tilt on desktop only; disable on touch devices and when reduced motion is requested."
+    },
+    "visual_directive": "Open with generous whitespace and a quiet technical grid. Use a short eyebrow, compact two-line headline, readable supporting copy, a strong primary CTA, and a visibly secondary text CTA."
+  },
+  "social_proof": {
+    "id": "social-proof",
+    "trust_statement": "Built for teams that care about every customer handoff.",
+    "logo_label": "Teams building better customer operations",
+    "client_logos": [
+      {
+        "name": "Acme Corp",
+        "image": "/assets/customers/acme.svg",
+        "alt": "Acme Corp"
+      },
+      {
+        "name": "Vortex",
+        "image": "/assets/customers/vortex.svg",
+        "alt": "Vortex"
+      },
+      {
+        "name": "Pulse",
+        "image": "/assets/customers/pulse.svg",
+        "alt": "Pulse"
+      },
+      {
+        "name": "Apex",
+        "image": "/assets/customers/apex.svg",
+        "alt": "Apex"
+      }
+    ],
+    "metrics": [
+      {
+        "value": "10,000+",
+        "label": "teams in the network",
+        "verification_status": "needs_business_verification"
+      },
+      {
+        "value": "99.9%",
+        "label": "platform availability",
+        "verification_status": "needs_business_verification"
+      },
+      {
+        "value": "$15M+",
+        "label": "estimated work value returned",
+        "verification_status": "needs_business_verification"
+      }
+    ],
+    "visual_directive": "Use a restrained customer logo row on a light surface, followed by three evenly spaced metrics. Keep logos monochrome and preserve their proportions."
+  },
+  "transformation": {
+    "id": "transformation",
+    "kicker": "THE OLD WAY / THE NEXUSAI WAY",
+    "headline": "Make the busywork disappear.",
+    "subheadline": "Replace scattered workarounds with workflows your whole team can trust.",
+    "comparison": [
+      {
+        "old_way": {
+          "title": "Copying data between tools",
+          "description": "Customer details get re-entered by hand, leaving room for delays and mistakes."
+        },
+        "new_way": {
+          "title": "One connected customer record",
+          "description": "Keep the right details moving between your CRM, support, and billing tools automatically."
+        }
+      },
+      {
+        "old_way": {
+          "title": "The same request, again and again",
+          "description": "Your specialists spend their day on repeatable tasks instead of complex customer needs."
+        },
+        "new_way": {
+          "title": "A reliable workflow for every handoff",
+          "description": "Automate routine steps and give people a clear path when judgment is needed."
+        }
+      },
+      {
+        "old_way": {
+          "title": "Finding out when something breaks",
+          "description": "Issues hide in inboxes and spreadsheets until a customer follows up."
+        },
+        "new_way": {
+          "title": "Visibility from trigger to outcome",
+          "description": "Track workflow activity, spot exceptions, and know where each task stands."
+        }
+      }
+    ],
+    "visual_directive": "Present three aligned comparison rows. Distinguish the old workflow with muted typography and the improved workflow with clear positive emphasis. On small screens, stack each old/new pair without turning the full section into nested cards."
+  },
+  "features": {
+    "id": "features",
+    "kicker": "THE PLATFORM",
+    "headline": "Everything your team needs to move work forward.",
+    "subheadline": "Flexible automation for the real work between your customer tools.",
+    "grid": {
+      "columns_desktop": 3,
+      "columns_tablet": 2,
+      "columns_mobile": 1,
+      "items": [
+        {
+          "id": "visual-workflow-builder",
+          "title": "Build workflows visually",
+          "description": "Connect triggers, actions, and decisions in a clear canvas your whole team can understand.",
+          "visual": {
+            "type": "workflow_canvas",
+            "asset": "/assets/product/feature-workflow-canvas.svg",
+            "alt": "Visual workflow canvas connecting a support ticket trigger to customer follow-up actions"
+          }
+        },
+        {
+          "id": "connected-apps",
+          "title": "Bring your tools together",
+          "description": "Move information between your customer systems without adding another manual step.",
+          "visual": {
+            "type": "integration_map",
+            "asset": "/assets/product/feature-connected-apps.svg",
+            "alt": "Connected app icons with customer information flowing between systems"
+          }
+        },
+        {
+          "id": "ai-assistance",
+          "title": "Put AI to practical work",
+          "description": "Classify incoming requests and draft structured summaries while keeping people in control.",
+          "visual": {
+            "type": "ai_review_panel",
+            "asset": "/assets/product/feature-ai-review.svg",
+            "alt": "AI-assisted request summary with a human review control"
+          }
+        },
+        {
+          "id": "data-mapping",
+          "title": "Keep customer data consistent",
+          "description": "Map fields, format values, and route the right context to the right destination.",
+          "visual": {
+            "type": "field_mapping_table",
+            "asset": "/assets/product/feature-data-mapping.svg",
+            "alt": "Data mapping table matching customer fields between connected applications"
+          }
+        },
+        {
+          "id": "human-approvals",
+          "title": "Add a human check when it matters",
+          "description": "Pause sensitive workflows for review, approval, or a decision only your team can make.",
+          "visual": {
+            "type": "approval_step",
+            "asset": "/assets/product/feature-approvals.svg",
+            "alt": "Workflow approval step waiting for a team member's review"
+          }
+        },
+        {
+          "id": "error-handling",
+          "title": "Handle exceptions with clarity",
+          "description": "See what needs attention, retry failed steps, and keep exceptions from disappearing.",
+          "visual": {
+            "type": "exception_queue",
+            "asset": "/assets/product/feature-exceptions.svg",
+            "alt": "Exception queue showing a failed workflow step and retry action"
+          }
+        },
+        {
+          "id": "analytics",
+          "title": "Understand what is working",
+          "description": "Follow activity and outcomes so you can improve the workflows your team relies on.",
+          "visual": {
+            "type": "analytics_chart",
+            "asset": "/assets/product/feature-analytics.svg",
+            "alt": "Workflow analytics chart displaying completed tasks over time"
+          }
+        },
+        {
+          "id": "permissions",
+          "title": "Give teams the right access",
+          "description": "Set workspace roles and keep sensitive workflow changes visible to the right people.",
+          "visual": {
+            "type": "permissions_panel",
+            "asset": "/assets/product/feature-permissions.svg",
+            "alt": "Workspace access settings with roles and permissions"
+          }
+        },
+        {
+          "id": "audit-history",
+          "title": "Trace every workflow run",
+          "description": "Review step-by-step run history to answer questions and troubleshoot with context.",
+          "visual": {
+            "type": "execution_timeline",
+            "asset": "/assets/product/feature-run-history.svg",
+            "alt": "Workflow execution timeline showing completed and pending steps"
+          }
+        }
+      ]
+    },
+    "visual_directive": "Use a 3 by 3 grid of unframed feature callouts. Each item gets a compact product UI crop, a concise title, and a short description. Keep the visual areas consistent in aspect ratio and avoid generic decorative icon tiles."
+  },
+  "testimonials": {
+    "id": "testimonials",
+    "headline": "Less routine work. More room for great customer experiences.",
+    "items": [
+      {
+        "quote": "NexusAI helped us take repetitive handoffs off the team's plate. We can spend more time solving the customer issues that need real attention.",
+        "author_name": "Sarah Jenkins",
+        "author_title": "Head of Operations",
+        "company_name": "ScaleTech",
+        "avatar_image": "/assets/testimonials/sarah-jenkins.svg",
+        "avatar_alt": "Sarah Jenkins",
+        "metric_win": {
+          "value": "60%",
+          "label": "less time spent on repeatable operations",
+          "verification_status": "needs_customer_approval"
+        },
+        "content_status": "sample_testimonial"
+      },
+      {
+        "quote": "We connected our customer systems and got a useful workflow running without turning setup into another engineering project.",
+        "author_name": "David Chen",
+        "author_title": "VP of Product",
+        "company_name": "CloudFlow",
+        "avatar_image": "/assets/testimonials/david-chen.svg",
+        "avatar_alt": "David Chen",
+        "metric_win": {
+          "value": "10 min",
+          "label": "to launch a first workflow",
+          "verification_status": "needs_customer_approval"
+        },
+        "content_status": "sample_testimonial"
+      }
+    ],
+    "visual_directive": "Show two editorial quote panels with readable quote text, customer identity, and one verified metric each. Use real, permissioned portraits; preserve a simple fallback when no avatar is available."
+  },
+  "faq": {
+    "id": "faq",
+    "headline": "Good questions. Straight answers.",
+    "items": [
+      {
+        "id": "pricing",
+        "question": "How does NexusAI pricing work?",
+        "answer": "Plans are based on the capabilities and usage your team needs. You can review current plan details on our pricing page, and our team can help you find the right fit before you commit.",
+        "link": {
+          "label": "View pricing",
+          "url": "/pricing"
+        }
+      },
+      {
+        "id": "security",
+        "question": "How do you protect our data?",
+        "answer": "NexusAI is designed with access controls, encrypted data transfer, and workflow activity history. Contact our security team for current documentation and details about the controls available for your plan.",
+        "link": {
+          "label": "Contact security",
+          "url": "/contact/security"
+        }
+      },
+      {
+        "id": "setup-time",
+        "question": "How long does setup take?",
+        "answer": "Many teams can connect their first tools and build a simple workflow in a short setup session. The time depends on your systems and process; you can start small and add steps as you learn."
+      },
+      {
+        "id": "support",
+        "question": "What support is available?",
+        "answer": "Every plan includes access to product help and setup guidance. Support options and response times vary by plan; our team can walk you through the current details.",
+        "link": {
+          "label": "Talk to our team",
+          "url": "/contact"
+        }
+      }
+    ],
+    "interaction_directive": "Use a keyboard-operable accordion with clear expanded state, visible focus, and one open answer at a time. Keep answers in the document for search indexing and avoid motion that shifts nearby content abruptly."
+  },
+  "final_cta": {
+    "id": "final-cta",
+    "headline": "Give your team its time back.",
+    "subheadline": "Start with one workflow. See what your customer operations can feel like when routine work runs itself.",
+    "primary_cta": {
+      "label": "Start your free trial",
+      "url": "/signup"
+    },
+    "secondary_cta": {
+      "label": "Talk to our team",
+      "url": "/contact"
+    },
+    "trust_indicators": [
+      "No credit card required",
+      "Start with your existing tools",
+      "Cancel any time"
+    ],
+    "visual_directive": "Create a full-width ink-dark closing band with a compact, high-contrast headline, two clear actions, and a short trust-indicator row. Keep the text aligned to the same content grid as the rest of the page."
+  },
+  "footer": {
+    "logo": {
+      "light_mode": "/assets/branding/nexusai-logo-dark.svg",
+      "dark_mode": "/assets/branding/nexusai-logo-light.svg",
+      "alt": "NexusAI",
+      "width": 148,
+      "height": 34
+    },
+    "emblem": {
+      "src": "/assets/branding/nexusai-mark.svg",
+      "alt": "NexusAI mark"
+    },
+    "tagline": "The calm, connected way to run customer operations.",
+    "link_columns": [
+      {
+        "title": "Product",
+        "links": [
+          {
+            "label": "Platform",
+            "url": "/platform"
+          },
+          {
+            "label": "Integrations",
+            "url": "/integrations"
+          },
+          {
+            "label": "Pricing",
+            "url": "/pricing"
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          {
+            "label": "Documentation",
+            "url": "/docs"
+          },
+          {
+            "label": "Guides",
+            "url": "/guides"
+          },
+          {
+            "label": "Product updates",
+            "url": "/product/updates"
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          {
+            "label": "About us",
+            "url": "/about"
+          },
+          {
+            "label": "Contact",
+            "url": "/contact"
+          },
+          {
+            "label": "Careers",
+            "url": "/careers"
+          }
+        ]
+      }
+    ],
+    "legal_links": [
+      {
+        "label": "Privacy",
+        "url": "/privacy"
+      },
+      {
+        "label": "Terms",
+        "url": "/terms"
+      },
+      {
+        "label": "Cookie preferences",
+        "url": "/cookies"
+      }
+    ],
+    "social_links": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/company/nexusai",
+        "icon": "linkedin"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/nexusai",
+        "icon": "x"
+      }
+    ],
+    "copyright": "© 2026 NexusAI, Inc. All rights reserved.",
+    "visual_directive": "Use an ink-dark footer with the light logo, one-line tagline, three link columns, and a separate lower row for legal links, social links, and copyright. Stack columns cleanly on mobile."
+  }
+}
