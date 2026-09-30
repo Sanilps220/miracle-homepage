@@ -1,0 +1,57 @@
+{
+  "site": {
+    "name": null,
+    "title": "Freelance Portfolio",
+    "description": null
+  },
+  "hero": {
+    "eyebrow": null,
+    "headline": "Independent work, thoughtfully made.",
+    "intro": null,
+    "primary_cta": {
+      "label": "Discuss a project",
+      "url": null
+    },
+    "secondary_cta": null
+  },
+  "about": {
+    "heading": "About Me",
+    "body": "I'm an experienced software engineer who constantly seeks out innovative solutions to everyday problems. In my five years in this industry, I've honed my analytical thinking and collaboration skills, and I love working with a team. I've also had the opportunity to serve as the software engineer lead for three projects with Deepnetsoft Solutions",
+    "image": null,
+    "image_alt": null
+  },
+  "services": {
+    "heading": "Services",
+    "items": []
+  },
+  "projects": {
+    "heading": "Selected work",
+    "items": [
+      {
+        "id": "nexusai-concept",
+        "title": "NexusAI SaaS landing page",
+        "category": "Concept project",
+        "description": "A concept landing page for a fictional workflow-automation product. The interface, brand, and customer materials are illustrative samples.",
+        "role": null,
+        "year": null,
+        "tools": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+        "image": "/assets/product/hero-workflow-dashboard.svg",
+        "image_alt": "Illustrative workflow automation dashboard created for a concept landing page",
+        "url": null
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": null,
+    "items": []
+  },
+  "contact": {
+    "heading": "Contact",
+    "intro": "Have a project in mind? Let's discuss it.",
+    "email": "sanilps220@gmail.com",
+    "links": ["sanilps220@gmail.com","https://www.linkedin.com/in/sanil-ps-84073b229"]
+  },
+  "footer": {
+    "copyright_name": null
+  }
+}

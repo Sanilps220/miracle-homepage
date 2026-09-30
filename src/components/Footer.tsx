@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { HomepageData } from '@/types/homepage';
+import Link from 'next/link';
 
 interface FooterProps {
   data: HomepageData['footer'];
@@ -14,7 +15,7 @@ export default function Footer({ data, branding }: FooterProps) {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 pb-12 border-b border-[#29302B]">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <a href="/" className="inline-block mb-4">
+            <Link href="/" className="inline-block mb-4">
               <Image
                 src={data.logo.dark_mode}
                 alt={data.logo.alt}
@@ -22,7 +23,7 @@ export default function Footer({ data, branding }: FooterProps) {
                 height={data.logo.height}
                 className="h-8 w-auto"
               />
-            </a>
+            </Link>
             <p className="text-sm max-w-[320px] text-[#A2ABA5] leading-relaxed">
               {data.tagline || branding.tagline}
             </p>

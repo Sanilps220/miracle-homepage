@@ -93,6 +93,7 @@ export interface FAQItem {
 }
 
 export interface HomepageData {
+
   schema_version: string;
   site: { name: string; base_url: string };
   head_metadata: HeadMetadata;
@@ -103,11 +104,17 @@ export interface HomepageData {
     badge: string;
     text: string;
     link: { label: string; url: string };
+    dismissible: boolean;
   };
   navigation: {
     logo: Branding['logos']['light_mode'];
     links: Array<{ label: string; url: string }>;
     primary_cta: CTA;
+    mobile_menu:  {
+    open_label: string,
+    close_label: string,
+    show_primary_cta: boolean,
+    },
   };
   hero: HeroSection;
   social_proof: {
@@ -132,6 +139,7 @@ export interface HomepageData {
   testimonials: {
     headline: string;
     items: TestimonialItem[];
+      id: string;
   };
   faq: {
     id: string;

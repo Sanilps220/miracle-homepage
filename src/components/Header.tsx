@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { HomepageData } from '@/types/homepage';
+import Link from 'next/link';
 
 interface HeaderProps {
   navigation: HomepageData['navigation'];
@@ -46,9 +47,9 @@ export default function Header({ navigation, announcement }: HeaderProps) {
       <nav className="bg-[#F6F7F4]/80 backdrop-blur-md border-b border-[#DFE4DE]">
         <div className="max-w-[1200px] mx-auto px-6 h-16 sm:h-20 flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <Image
-              src={navigation.logo.light_mode}
+              src={navigation.logo.src}
               alt={navigation.logo.alt}
               width={navigation.logo.width}
               height={navigation.logo.height}
@@ -56,14 +57,14 @@ export default function Header({ navigation, announcement }: HeaderProps) {
               className="h-8 w-auto dark:hidden"
             />
             <Image
-              src={navigation.logo.dark_mode}
+              src={navigation.logo.src}
               alt={navigation.logo.alt}
               width={navigation.logo.width}
               height={navigation.logo.height}
               priority
               className="h-8 w-auto hidden dark:block"
             />
-          </a>
+          </Link>
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
