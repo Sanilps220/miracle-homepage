@@ -45,7 +45,18 @@
     "heading": "Notes & articles",
     "intro": null,
     "empty_message": "New writing is in progress. Check back soon.",
-    "posts": []
+    "posts": [
+      {
+        "id": "building-stylish-websites",
+        "title": "How to Build a Stylish Website Without Sacrificing Usability",
+        "excerpt": "A thoughtful website starts with a clear purpose. Pair expressive typography and a focused color palette with strong hierarchy, responsive layouts, accessible contrast, and fast-loading pages so the design feels as good to use as it looks.",
+        "category": "Web design",
+        "published_at": "2026-10-03",
+        "image": "/assets/blog/building-stylish-websites.png",
+        "image_alt": "building-stylish-websites",
+        "url": null
+      }
+    ]
   },
   "testimonials": {
     "heading": null,
