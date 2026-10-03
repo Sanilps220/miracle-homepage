@@ -17,8 +17,8 @@
   "about": {
     "heading": "About Me",
     "body": "I'm an experienced software engineer who constantly seeks out innovative solutions to everyday problems. In my five years in this industry, I've honed my analytical thinking and collaboration skills, and I love working with a team. I've also had the opportunity to serve as the software engineer lead for three projects with Deepnetsoft Solutions",
-    "image": null,
-    "image_alt": null
+    "image": "/assets/profile/auther.png",
+    "image_alt": "about-me"
   },
   "services": {
     "heading": "Services",

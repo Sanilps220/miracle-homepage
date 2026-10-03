@@ -231,22 +231,22 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
       {aboutHasContent && (
         <section id="about" className="border-t border-[#DFE4DE] bg-[#E9EDE7] px-6 py-20 md:py-24">
           <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.8fr_1.2fr] md:gap-20">
-            <h2 className="text-3xl font-semibold sm:text-4xl">
-              {hasText(data.about.heading) ? data.about.heading : 'About'}
-            </h2>
-            <div>
-              {hasText(data.about.body) && <p className="max-w-2xl whitespace-pre-line text-lg leading-8 text-[#39413B]">{data.about.body}</p>}
-              {hasText(data.about.image) && (
+            {hasText(data.about.image) && (
                 <Image
                   src={data.about.image}
                   alt={hasText(data.about.image_alt) ? data.about.image_alt : ''}
-                  width={800}
-                  height={600}
+                  width={250}
+                  height={200}
                   unoptimized
-                  className="mt-8 max-h-[480px] w-full rounded-md object-cover"
+                  className=" rounded-md object-cover"
                 />
-              )}
-            </div>
+            )}
+               <div>
+                  <h2 className="mt-8 text-3xl font-semibold sm:text-4xl">
+                  {hasText(data.about.heading) ? data.about.heading : 'About'}
+                  </h2>
+                  {hasText(data.about.body) && <p className="max-w-2xl whitespace-pre-line text-lg leading-8 text-[#39413B]">{data.about.body}</p>}
+               </div>
           </div>
         </section>
       )}
