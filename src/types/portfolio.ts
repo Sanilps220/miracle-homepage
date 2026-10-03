@@ -22,6 +22,17 @@ export interface PortfolioTestimonial {
   author_title: string | null;
 }
 
+export interface PortfolioPost {
+  id: string;
+  title: string | null;
+  excerpt: string | null;
+  category: string | null;
+  published_at: string | null;
+  image: string | null;
+  image_alt: string | null;
+  url: string | null;
+}
+
 export interface PortfolioData {
   site: {
     name: string | null;
@@ -51,6 +62,12 @@ export interface PortfolioData {
   projects: {
     heading: string | null;
     items: Array<PortfolioProject | null> | null;
+  };
+  blog: {
+    heading: string | null;
+    intro: string | null;
+    empty_message: string | null;
+    posts: Array<PortfolioPost | null> | null;
   };
   testimonials: {
     heading: string | null;

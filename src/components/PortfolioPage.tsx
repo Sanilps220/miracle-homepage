@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import type { PortfolioData, PortfolioLink, PortfolioProject } from '@/types/portfolio';
+import type { PortfolioData, PortfolioLink, PortfolioPost, PortfolioProject } from '@/types/portfolio';
 
 interface PortfolioPageProps {
   data: PortfolioData;
@@ -11,6 +11,9 @@ const hasText = (value: string | null | undefined): value is string =>
 const isProject = (project: PortfolioProject | null): project is PortfolioProject =>
   project !== null && hasText(project.title);
 
+const isPost = (post: PortfolioPost | null): post is PortfolioPost =>
+  post !== null && hasText(post.title);
+
 const isCompleteLink = (
   link: PortfolioLink | null,
 ): link is PortfolioLink & { label: string; url: string } =>
@@ -18,6 +21,7 @@ const isCompleteLink = (
 
 export default function PortfolioPage({ data }: PortfolioPageProps) {
   const projects = (data.projects.items ?? []).filter(isProject);
+  const posts = (data.blog.posts ?? []).filter(isPost);
   const services = (data.services.items ?? []).filter(
     (service) => hasText(service?.title) || hasText(service?.description),
   );
@@ -38,6 +42,7 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
 
   const navigation = [
     projects.length > 0 ? { label: 'Work', href: '#work' } : null,
+    { label: 'Blog', href: '#blog' },
     services.length > 0 ? { label: 'Services', href: '#services' } : null,
     aboutHasContent ? { label: 'About', href: '#about' } : null,
     hasContact ? { label: 'Contact', href: '#contact' } : null,
@@ -158,6 +163,54 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
           </div>
         </section>
       )}
+
+      <section id="blog" className="border-t border-[#DFE4DE] px-6 py-20 md:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 max-w-2xl">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.12em] text-[#59615C]">Writing</p>
+            <h2 className="text-3xl font-semibold sm:text-4xl">
+              {hasText(data.blog.heading) ? data.blog.heading : 'Notes & articles'}
+            </h2>
+            {hasText(data.blog.intro) && <p className="mt-4 leading-7 text-[#59615C]">{data.blog.intro}</p>}
+          </div>
+
+          {posts.length > 0 ? (
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {posts.map((post) => (
+                <article key={post.id} className="overflow-hidden rounded-md border border-[#DFE4DE] bg-white">
+                  {hasText(post.image) && (
+                    <Image
+                      src={post.image}
+                      alt={hasText(post.image_alt) ? post.image_alt : ''}
+                      width={800}
+                      height={450}
+                      unoptimized
+                      className="aspect-[16/9] w-full object-cover"
+                    />
+                  )}
+                  <div className="p-5">
+                    <div className="mb-3 flex flex-wrap gap-x-3 gap-y-1 text-xs uppercase tracking-wide text-[#59615C]">
+                      {hasText(post.category) && <span>{post.category}</span>}
+                      {hasText(post.published_at) && <time dateTime={post.published_at}>{post.published_at}</time>}
+                    </div>
+                    <h3 className="text-lg font-semibold">{post.title}</h3>
+                    {hasText(post.excerpt) && <p className="mt-3 text-sm leading-6 text-[#59615C]">{post.excerpt}</p>}
+                    {hasText(post.url) && (
+                      <a href={post.url} className="mt-5 inline-block text-sm font-semibold underline underline-offset-4">
+                        Read article
+                      </a>
+                    )}
+                  </div>
+                </article>
+              ))}
+            </div>
+          ) : (
+            hasText(data.blog.empty_message) && (
+              <p className="border-y border-[#DFE4DE] py-6 text-sm text-[#59615C]">{data.blog.empty_message}</p>
+            )
+          )}
+        </div>
+      </section>
 
       {services.length > 0 && (
         <section id="services" className="mx-auto max-w-6xl px-6 py-20 md:py-24">

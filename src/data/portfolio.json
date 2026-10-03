@@ -41,6 +41,12 @@
       }
     ]
   },
+  "blog": {
+    "heading": "Notes & articles",
+    "intro": null,
+    "empty_message": "New writing is in progress. Check back soon.",
+    "posts": []
+  },
   "testimonials": {
     "heading": null,
     "items": []
