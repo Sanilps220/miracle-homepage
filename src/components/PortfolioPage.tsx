@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ContactUs from '@/components/ContactUs';
 import type { PortfolioData, PortfolioLink, PortfolioPost, PortfolioProject } from '@/types/portfolio';
 
 interface PortfolioPageProps {
@@ -49,10 +50,10 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
   ].filter((item) => item !== null);
 
   return (
-    <main className="min-h-screen bg-[#F6F7F4] text-[#101311]">
+    <main className="portfolio-page min-h-screen bg-[#F6F7F4] text-[#101311]">
       <header className="border-b border-[#DFE4DE]">
         <div className="mx-auto flex min-h-20 max-w-6xl items-center justify-between gap-6 px-6">
-          <a href="#top" className="shrink-0 text-lg font-bold">
+          <a href="#top" className="shrink-0 text-lg font-bold hover:text-[#528B5F]">
             {hasText(data.site.name) ? data.site.name : 'Portfolio'}
           </a>
           {navigation.length > 0 && (
@@ -67,7 +68,7 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
         </div>
       </header>
 
-      <section id="top" className="mx-auto max-w-6xl px-6 pb-20 pt-24 md:pb-28 md:pt-32">
+      <section id="top" className="scroll-reveal mx-auto max-w-6xl px-6 pb-20 pt-24 md:pb-28 md:pt-32">
         <div className="max-w-4xl">
           {hasText(data.hero.eyebrow) && (
             <p className="mb-6 text-xs font-semibold uppercase tracking-[0.12em] text-[#59615C]">
@@ -86,12 +87,12 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
           (hasText(secondaryCta?.label) && hasText(secondaryCta.url)) ? (
             <div className="mt-9 flex flex-wrap gap-3">
               {hasText(primaryCta?.label) && hasText(primaryCta.url) && (
-                <a href={primaryCta.url} className="rounded-md bg-[#101311] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#343B35]">
+                <a href={primaryCta.url} className="portfolio-cta rounded-md bg-[#101311] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#343B35]">
                   {primaryCta.label}
                 </a>
               )}
               {hasText(secondaryCta?.label) && hasText(secondaryCta.url) && (
-                <a href={secondaryCta.url} className="rounded-md border border-[#BFC7BF] px-5 py-3 text-sm font-semibold transition-colors hover:bg-white">
+                <a href={secondaryCta.url} className="portfolio-cta rounded-md border border-[#BFC7BF] px-5 py-3 text-sm font-semibold transition-colors hover:bg-white">
                   {secondaryCta.label}
                 </a>
               )}
@@ -104,7 +105,7 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
         <section id="work" className="border-t border-[#DFE4DE] bg-white px-6 py-20 md:py-24">
           <div className="mx-auto max-w-6xl">
             <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
-              <div>
+              <div className="scroll-reveal">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.12em] text-[#59615C]">Portfolio</p>
                 <h2 className="text-3xl font-semibold sm:text-4xl">
                   {hasText(data.projects.heading) ? data.projects.heading : 'Selected work'}
@@ -116,7 +117,7 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
               {projects.map((project) => {
                 const tools = (project.tools ?? []).filter(hasText);
                 const card = (
-                  <article className="group h-full overflow-hidden rounded-md border border-[#DFE4DE] bg-[#F6F7F4] transition-colors hover:border-[#9AA69B]">
+                  <article className="portfolio-card scroll-reveal group h-full overflow-hidden rounded-md border border-[#DFE4DE] bg-[#F6F7F4] transition-colors hover:border-[#9AA69B]">
                     {hasText(project.image) && (
                       <div className="aspect-[16/9] overflow-hidden bg-[#E6EAE5]">
                         <Image
@@ -166,7 +167,7 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
 
       <section id="blog" className="border-t border-[#DFE4DE] px-6 py-20 md:py-24">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-10 max-w-2xl">
+          <div className="scroll-reveal mb-10 max-w-2xl">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.12em] text-[#59615C]">Writing</p>
             <h2 className="text-3xl font-semibold sm:text-4xl">
               {hasText(data.blog.heading) ? data.blog.heading : 'Notes & articles'}
@@ -177,7 +178,7 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
           {posts.length > 0 ? (
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {posts.map((post) => (
-                <article key={post.id} className="overflow-hidden rounded-md border border-[#DFE4DE] bg-white">
+                <article key={post.id} className="portfolio-card scroll-reveal overflow-hidden rounded-md border border-[#DFE4DE] bg-white">
                   {hasText(post.image) && (
                     <Image
                       src={post.image}
@@ -213,7 +214,7 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
       </section>
 
       {services.length > 0 && (
-        <section id="services" className="mx-auto max-w-6xl px-6 py-20 md:py-24">
+        <section id="services" className="scroll-reveal mx-auto max-w-6xl px-6 py-20 md:py-24">
           <h2 className="text-3xl font-semibold sm:text-4xl">
             {hasText(data.services.heading) ? data.services.heading : 'Services'}
           </h2>
@@ -229,7 +230,7 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
       )}
 
       {aboutHasContent && (
-        <section id="about" className="border-t border-[#DFE4DE] bg-[#E9EDE7] px-6 py-20 md:py-24">
+        <section id="about" className="scroll-reveal border-t border-[#DFE4DE] bg-[#E9EDE7] px-6 py-20 md:py-24">
           <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[0.8fr_1.2fr] md:gap-20">
             {hasText(data.about.image) && (
                 <Image
@@ -252,7 +253,7 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
       )}
 
       {testimonials.length > 0 && (
-        <section className="mx-auto max-w-6xl px-6 py-20 md:py-24">
+        <section className="scroll-reveal mx-auto max-w-6xl px-6 py-20 md:py-24">
           {hasText(data.testimonials.heading) && <h2 className="mb-10 text-3xl font-semibold sm:text-4xl">{data.testimonials.heading}</h2>}
           <div className="grid gap-6 md:grid-cols-2">
             {testimonials.map((item, index) => (
@@ -269,22 +270,7 @@ export default function PortfolioPage({ data }: PortfolioPageProps) {
       )}
 
       {hasContact && (
-        <section id="contact" className="bg-[#101311] px-6 py-20 text-[#F6F7F4] md:py-24">
-          <div className="mx-auto max-w-6xl">
-            {hasText(data.contact.heading) && <h2 className="max-w-3xl text-3xl font-semibold sm:text-5xl">{data.contact.heading}</h2>}
-            {hasText(data.contact.intro) && <p className="mt-5 max-w-2xl text-base leading-7 text-[#C2CAC3]">{data.contact.intro}</p>}
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3">
-              {hasText(data.contact.email) && (
-                <a href={`mailto:${data.contact.email}`} className="font-semibold underline underline-offset-4">{data.contact.email}</a>
-              )}
-              {contactLinks.map((link) => (
-                <a key={link.url} href={link.url} target="_blank" rel="noreferrer" className="font-semibold underline underline-offset-4">
-                  {link.label}
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
+        <ContactUs heading={data.contact.heading} intro={data.contact.intro} email={data.contact.email} />
       )}
 
       {hasText(copyrightName) && (
